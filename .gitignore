@@ -1,0 +1,13 @@
+.DS_Store
+.vagrant
+.idea
+composer.lock
+vendor/
+node_modules/
+bower_components/
+public/vendor/
+app/config/development.php
+app/config/production.php
+app/config/testing.php
+app/config/staging.php
+app/config/parameters.php

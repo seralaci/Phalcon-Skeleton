@@ -1,0 +1,33 @@
+---
+- name: checkout phalcon repository
+  git: repo=https://github.com/phalcon/cphalcon.git version=2.0.0 dest=/tmp/cphalcon accept_hostkey=yes
+
+- name: checkout Zephir lang
+  git: repo=https://github.com/phalcon/zephir dest=/tmp/zephir accept_hostkey=yes
+
+#- shell: ./install-json
+#  args:
+#    chdir: /tmp/zephir
+
+- shell: ./install -c 
+  args:
+    chdir: /tmp/zephir
+
+- name: build phalcon
+  action: command {{ item }} chdir=/tmp/cphalcon
+  with_items:
+    - zephir generate
+    - zephir compile
+
+- name: copy phalcon.so
+  command: sudo cp /tmp/cphalcon/ext/modules/phalcon.so /usr/lib/php5/20131226/phalcon.so
+
+- name: copy phalcon.ini
+  copy: src=phalcon.ini dest=/etc/php5/mods-available/phalcon.ini owner=root group=root mode=0644
+
+- name: enable phalcon
+  action: command {{ item }}
+  with_items:
+    - php5enmod phalcon
+  notify: restart apache
+  ignore_errors: True

@@ -1,0 +1,22 @@
+{
+  "name": "phalcon-keleton",
+  "version": "0.0.0",
+  "homepage": "https://github.com/seralaci/Phalcon-Skeleton",
+  "authors": [
+    "László Séra <laszlo.sera@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/src/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~4.0",
+    "font-awesome": "fontawesome#~4.5.0",
+    "tether": "~1.1.1"
+  }
+}

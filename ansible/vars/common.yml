@@ -1,0 +1,12 @@
+---
+server:
+  timezone: Europe/Budapest
+  packages: [git, gcc, make, re2c, libpcre3-dev, htop, iotop, imagemagick]
+  hostname: phalcon.dev
+  servername: phalcon.dev
+  locale: hu_HU.UTF-8
+  web_root: /vagrant/public
+
+git:
+  http:
+    postBuffer: 524288000

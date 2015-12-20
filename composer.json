@@ -1,0 +1,31 @@
+{
+    "name": "",
+    "description": "Phalcon boilerplate",
+    "url": "https://github.com/seralaci/Phalcon-Skeleton",
+    "license": "MIT",
+    "type": "project",
+    "keywords": [
+        "phalcon",
+        "skeleton",
+        "boilerplate"
+    ],
+    "require": {
+        "php": ">=5.4",
+        "ext-json": "*",
+        "symfony/console": "*"
+    },
+    "require-dev": {
+        "composer/composer": "1.0.*@dev",
+        "squizlabs/php_codesniffer": "~2.2"
+    },
+    "authors": [
+        {
+            "name": "László Séra",
+            "email": "laszlo.sera@gmail.com"
+        }
+    ],
+    "extra": {
+        "app-dir": "app",
+        "web-dir": "public"
+    }
+}

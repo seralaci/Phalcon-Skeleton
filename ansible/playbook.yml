@@ -1,0 +1,19 @@
+---
+- hosts: all
+  sudo: true
+  vars_files:
+    - vars/common.yml
+    - vars/mysql.yml
+    - vars/memcached.yml
+    - vars/php.yml
+    - vars/xdebug.yml
+  roles:
+    - init
+    - apache
+    - mysql
+    - memcached
+    - php
+    - xdebug
+    - composer
+    - app
+    - php-phalcon

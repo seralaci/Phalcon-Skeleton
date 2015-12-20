@@ -1,0 +1,4 @@
+php:
+    ppa: php5-5.6
+    packages: [php5-cli, php-pear, php5-dev, php5-curl, php5-imagick, php5-common, php5-json, php5-gd, php5-geoip, php5-imap, php5-intl, php5-mcrypt, libapache2-mod-php5, php5-mysql, php5-odbc, php5-xdebug]
+    pecl_packages: []
