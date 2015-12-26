@@ -1,6 +1,9 @@
 <?php
 
+namespace App\Plugins;
+
 use Phalcon\Events\Event;
+use Phalcon\Exception;
 use Phalcon\Mvc\User\Plugin;
 use Phalcon\Dispatcher;
 use Phalcon\Mvc\Dispatcher\Exception as DispatcherException;

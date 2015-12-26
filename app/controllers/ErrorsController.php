@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Controllers;
+
 class ErrorsController extends ControllerBase
 {
     public function initialize()

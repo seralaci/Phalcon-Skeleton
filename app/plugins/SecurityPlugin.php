@@ -1,8 +1,11 @@
 <?php
 
+namespace App\Plugins;
+
 use Phalcon\Acl;
 use Phalcon\Acl\Role;
 use Phalcon\Acl\Resource;
+use Phalcon\Events\Manager as EventsManager;
 use Phalcon\Events\Event;
 use Phalcon\Mvc\User\Plugin;
 use Phalcon\Mvc\Dispatcher;
